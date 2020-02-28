@@ -11,7 +11,6 @@ function Header(props) {
 				</LogoStyled>
 			</Link>
 			<Nav />
-			<input placeholder="Rechercher un Pokemon" />
 			<label>&#128722;</label>
 		</HeaderStyled>
 	);
