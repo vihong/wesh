@@ -18,7 +18,7 @@ function Header(props) {
 }
 
 const HeaderStyled = styled.header`
-	font-family: Nunito, sans-serif;
+	font-family: Poppins, Nunito;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
