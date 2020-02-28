@@ -33,7 +33,7 @@ const NavStyled = styled.nav`
 		padding: 0 16px;
 		a {
 			font-size: 14px;
-			font-weight: 700;
+			font-weight: 500;
 			letter-spacing: 0.05rem;
 			transition: all 0.3s ease 0s;
 			color: white;

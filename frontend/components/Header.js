@@ -19,7 +19,7 @@ function Header(props) {
 const HeaderStyled = styled.header`
 	font-family: Poppins, Nunito;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
 	height: 80px;
 	background: #07215C;
@@ -44,7 +44,7 @@ const HeaderStyled = styled.header`
 
 const LogoStyled = styled.h1`
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: 300;
 	color: hsl(50, 100%, 50%);
 	cursor: pointer;
 	a {
