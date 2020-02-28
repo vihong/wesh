@@ -12,6 +12,10 @@ const Meta = (props) => {
 				rel="shortcut icon"
 				href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1026px-Pok%C3%A9_Ball_icon.svg.png"
 			/>
+			<link 
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900display=swap" 
+			/>
 			<link
 				rel="stylesheet"
 				type="text/css"
