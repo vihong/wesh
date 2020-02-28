@@ -23,7 +23,7 @@ const HeaderStyled = styled.header`
 	justify-content: flex-end;
 	align-items: center;
 	height: 80px;
-	background: #112c68;
+	background: #07215C;
 	input {
 		padding: 8px 25px;
 		margin: 0 15px;
