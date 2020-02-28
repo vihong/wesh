@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import Meta from './Meta';
+import Showcase from './Showcase';
 import Footer from './Footer';
 
 function Page(props) {
@@ -11,6 +12,7 @@ function Page(props) {
 				<GlobalStylePourTouteLaPage />
 				<Meta />
 				<Header />
+				<Showcase/>
 				<MainStyled>{props.children}</MainStyled>
 				<Footer/>
 			</PageStyled>
