@@ -29,21 +29,25 @@ const GlobalStylePourTouteLaPage = createGlobalStyle`
     body{
         margin: 0;
         padding: 0;
-        background: pink;
-    }
+		background: hsl(240, 1%, 99%);
+	}
+	*, *::before, *::after{
+		margin: 0;
+		padding: 0;
+	}
 `;
 
 // LocalTheme : je n'ai le droit qu'à un seul 'theme value' par Styled Component
 const pokemonThemeValue = {
 	colorTheme           : '#393939',
-	backgroundColorTheme : '#008a83',
-	maxWidthTheme        : '1000px',
+	backgroundColorTheme : 'hsl(240, 1%, 99%)',
+	maxWidthTheme        : '1280px',
 	boxShadowTheme       : '',
 	linkColorTheme       : 'lightblue'
 };
 
 const PageStyled = styled.div`
-	background: white;
+	background: hsl(240, 1%, 99%);
 	color: ${(props) => props.theme.colorTheme};
 `;
 
