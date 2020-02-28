@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import Meta from './Meta';
+import Footer from './Footer';
 
 function Page(props) {
 	return (
@@ -11,7 +12,7 @@ function Page(props) {
 				<Meta />
 				<Header />
 				<MainStyled>{props.children}</MainStyled>
-				{/* <Footer />  to be added by Toad*/}
+				<Footer/>
 			</PageStyled>
 		</ThemeProvider>
 	);
