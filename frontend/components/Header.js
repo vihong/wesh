@@ -22,7 +22,7 @@ const HeaderStyled = styled.header`
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 15px 5%;
+	height: 80px;
 	background: #112c68;
 	input {
 		padding: 8px 25px;
@@ -44,12 +44,14 @@ const HeaderStyled = styled.header`
 `;
 
 const LogoStyled = styled.h1`
-	font-size: 2rem;
-	color: #dbc959;
-	margin-right: auto;
+	font-size: 20px;
+	font-weight: 400;
+	color: hsl(50, 100%, 50%);
 	cursor: pointer;
 	a {
 		text-decoration: none;
+		margin-left: 24px;
+		letter-spacing: 0.05rem;
 	}
 	@media (max-width: 1300px) {
 		margin: 0 auto 0 0;
