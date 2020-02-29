@@ -13,8 +13,11 @@ const ShowcaseImage = styled.img`
     width:100%;
     height: 300px;
 
-    @media (max-width: 1048px) {
-        object-position: 10% 50%;
+    @media (max-width: 1092px) {
+        height: 250px; 
+    }
+
+    @media (max-width: 900px) {
         height: 200px; 
     }
 
