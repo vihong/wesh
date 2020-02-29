@@ -27,20 +27,21 @@ const HeaderStyled = styled.header`
 	background: #07215C;
 	padding: 0 24px;
 	}
+
+	@media (max-width: 768px) {
+		height: 64px;
+		padding: 0 8px;
+	}
 `;
 
 const LogoStyled = styled.h1`
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 500;
 	color: hsl(50, 100%, 50%);
 	cursor: pointer;
 	a {
 		text-decoration: none;
 		letter-spacing: 0.03em;
-	}
-	@media (max-width: 1300px) {
-		margin: 0 auto 0 0;
-		/* text-align: center; */
 	}
 `;
 
@@ -58,8 +59,14 @@ const Menu = styled.span`
 	svg:hover{
 		fill: gold;
 	}
+
+	@media (max-width: 768px) {
+		svg {
+			height: 24px;
+			width: 24px;
+			padding: 0 8px;
+		}	
+	}
 `
-
-
 
 export default Header;
