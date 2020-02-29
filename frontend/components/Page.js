@@ -31,6 +31,7 @@ const GlobalStylePourTouteLaPage = createGlobalStyle`
         padding: 0;
 		background: hsl(240, 1%, 99%);
 		font-family: Poppins, Nunito;
+		min-height: 100vh;
 	}
 	*, *::before, *::after{
 		margin: 0;
