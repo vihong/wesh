@@ -16,34 +16,32 @@ function Nav(props) {
 						<a>Vendre</a>
 					</Link>
 				</li>
-				<li>
-					<Link href="/connexion">
-						<a>Se connecter</a>
-					</Link>
-				</li>
 			</ul>
 		</NavStyled>
 	);
 }
 
 const NavStyled = styled.nav`
-	list-style: none;
-	ul li {
-		display: inline;
-		padding: 0 16px;
-		a {
-			font-size: 14px;
+	ul {
+		display: flex;
+		list-style: none;
+		padding-right: 16px;
+	}
+	li a {
+			font-size: 16px;
 			font-weight: 500;
-			letter-spacing: 0.05rem;
-			transition: all 0.3s ease 0s;
+			height: 100%;
+			letter-spacing: 0.03em;
 			color: white;
 			text-transform: uppercase;
 			text-decoration: none;
-			position: relative;
 			&:hover {
 				color: gold;
 			}
 		}
+	}
+	li:nth-child(n) {
+		padding-right: 16px;
 	}
 `;
 
