@@ -10,8 +10,10 @@ function Header(props) {
 					<a>PokéXchange</a>
 				</LogoStyled>
 			</Link>
-			<Nav />
-			<label>&#128722;</label>
+			<Menu>
+				<Nav />
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4 2h16l-3 9H4a1 1 0 1 0 0 2h13v2H4a3 3 0 0 1 0-6h.33L3 5 2 2H0V0h3a1 1 0 0 1 1 1v1zm1 18a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm10 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+			</Menu>
 		</HeaderStyled>
 	);
 }
@@ -19,26 +21,11 @@ function Header(props) {
 const HeaderStyled = styled.header`
 	font-family: Poppins, Nunito;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
 	height: 80px;
 	background: #07215C;
-	input {
-		padding: 8px 25px;
-		margin: 0 15px;
-		border-radius: 5px;
-		border: none;
-		width: 150px;
-		&[type=text] {
-			background-color: green;
-			color: red;
-			padding: 0;
-			font-size: 5rem;
-		}
-	}
-	label {
-		cursor: pointer;
-		font-size: 20px;
+	padding: 0 24px;
 	}
 `;
 
@@ -49,13 +36,32 @@ const LogoStyled = styled.h1`
 	cursor: pointer;
 	a {
 		text-decoration: none;
-		margin-left: 24px;
-		letter-spacing: 0.05rem;
+		letter-spacing: 0.03em;
 	}
 	@media (max-width: 1300px) {
 		margin: 0 auto 0 0;
 		/* text-align: center; */
 	}
 `;
+
+const Menu = styled.span`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	svg {
+        height: 30px; 
+        width: 30px;
+		padding: 0 16px;
+		fill: white;
+    	cursor: pointer;
+	}
+	
+	svg:hover{
+		fill: gold;
+	}
+`
+
+
 
 export default Header;
