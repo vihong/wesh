@@ -27,11 +27,8 @@ const GlobalStylePourTouteLaPage = createGlobalStyle`
         box-sizing: border-box;
     }
     body{
-        margin: 0;
-        padding: 0;
 		background: hsl(240, 1%, 99%);
 		font-family: Poppins, Nunito;
-		min-height: 100vh;
 	}
 	*, *::before, *::after{
 		margin: 0;
@@ -57,7 +54,6 @@ const PageStyled = styled.div`
 const MainStyled = styled.main`
 	background: ${(props) => props.theme.backgroundColorTheme};
 	margin: 0 auto;
-	padding: 2rem;
 	max-width: ${(props) => props.theme.maxWidthTheme};
 `;
 
