@@ -32,9 +32,11 @@ const HeaderStyled = styled.header`
 	background: #07215C;
 	padding: 0 24px;
 
+	@media (max-width: 1024px) {
+		padding: 0 8px;
+	}
 	@media (max-width: 768px) {
 		height: 64px;
-		padding: 0 8px;
 	}
 `;
 
