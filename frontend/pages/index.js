@@ -1,9 +1,13 @@
+import LabelBar from "../components/LabelBar";
+import styled from 'styled-components';
+
 const Home = () => {
 	return (
 		<div>
-			<p>HomePage</p>
+			<LabelBar/>
 		</div>
 	);
 };
+
 
 export default Home;
