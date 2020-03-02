@@ -9,8 +9,7 @@ const Footer = () => {
 }
 
 const Foot = styled.footer`
-    position: absolute;
-    bottom: 0;
+    padding-top: 24px;
     width: 100%;
     display: flex;
     justify-content: center;
