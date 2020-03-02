@@ -15,18 +15,23 @@ const ShowcaseImageDesktop = styled.img`
     height: 340px;
     width:100%;
     @media (max-width: 1024px) {
-        height: 300px;
+        height: 280px;
         display: none;
     }
 `
 
 const ShowcaseImageMobile = styled.img`
     display: none;
-    height: 280px;
+    height: 340px;
     width:100%;
     object-fit: cover;
+    
     @media (max-width: 1024px) {
         display: flex;
+    }
+
+    @media (max-width: 768px) {
+        height: 280px;
     }
 `
 
