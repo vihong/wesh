@@ -31,7 +31,6 @@ const LabelBarDiv = styled.div`
 const Filters = styled.div`
     display: flex;
     flex-direction: row;
-    margin: 0 50px;
     *{
         margin: 0 50px;
         display: flex;
@@ -42,6 +41,14 @@ const Filters = styled.div`
         content: 'transform it to input';
         font-size: 12px;
         color: grey
+    }
+
+    /* TO DELETE */
+
+    @media (max-width: 768px) {
+        * {
+            margin: 0;
+        }
     }
 `
 
