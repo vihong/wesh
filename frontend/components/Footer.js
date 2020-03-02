@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Footer = () => {
     return (
         <Foot>
-            <p>made by Tony KHAOV</p>            
+            <p>PokéXchange, made by <a href="http://github.com/tonykhaov" target="_blank">Tony KHAOV</a></p>
         </Foot>
     );
 }
