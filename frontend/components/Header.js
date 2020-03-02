@@ -22,6 +22,10 @@ function Header(props) {
 const HeaderStyled = styled.header`
 	font-family: Poppins, Nunito;
 	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	align-items: center;
 	justify-content: space-between;
 	height: 80px;
