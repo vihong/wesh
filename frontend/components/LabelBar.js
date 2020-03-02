@@ -24,7 +24,7 @@ const LabelBarDiv = styled.div`
         font-weight: 400;
     };
     margin-top: calc(-7px + 32px);
-    border-bottom: 1px solid #EBEBEB;
+    border-bottom: 2px solid #EBEBEB;
     padding-bottom: 18px;
 `
 
