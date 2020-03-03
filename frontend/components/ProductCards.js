@@ -18,6 +18,8 @@ function ProductCards() {
 /* TO STYLE WITH CSS GRID */
 
 const ProductCardsDiv = styled.div`
+    max-width: 1200px;    
+    margin: 0 auto;
     padding-top: 24px;
     display: flex;
     flex-direction: row;
