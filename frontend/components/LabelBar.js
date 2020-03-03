@@ -18,6 +18,8 @@ const LabelBarDiv = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     h1 {
         font-size: 20px;
         color: #000;
