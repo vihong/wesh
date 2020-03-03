@@ -15,16 +15,18 @@ function ProductCards() {
     )
 }
 
-/* TO STYLE WITH CSS GRID */
-
 const ProductCardsDiv = styled.div`
-    max-width: 1200px;    
+    max-width: 1004px;    
     margin: 0 auto;
     padding-top: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 192px);
+    grid-gap: 3rem;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        grid-gap: 2rem;
+    }
 `
 
 export default ProductCards
