@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
-function Card() {
+function Card({pokemon}) {
+    const IMG_URL = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokemon.id}.png`
     return (
         <Carddiv>
-            <VignetteImage height="160px" width="160px" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png">
+            <VignetteImage height="160px" width="160px" src={IMG_URL}>
             </VignetteImage>
             <DescriptionCard>
-                <Pokemon>Mewtwo</Pokemon>
-                <Price>10,00€</Price>
-                <Stock><strong>2</strong> en stock !</Stock>
+    <Pokemon>{pokemon.name}</Pokemon>
+    <Price>{pokemon.price}€</Price>
+    <Stock><strong>{pokemon.stock}</strong> en stock !</Stock>
             </DescriptionCard>
             <BuyButton>
                 Acheter
@@ -42,6 +43,7 @@ const Price = styled.h2`
     font-size: 20px;
     font-weight: 300;
     margin-top: 2px;
+    letter-spacing: 0.03em;
 `
 
 const Stock = styled.p`
@@ -63,6 +65,9 @@ const BuyButton = styled.button`
     font-weight: 500;
     letter-spacing: 0.02em;
     cursor: pointer;
+    &:hover {
+        background-color: #2552ce;
+    }
 `
 
 export default Card;
