@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
-function Card({pokemon}) {
-    const IMG_URL = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokemon.id}.png`
+function Card({name, price, id, stock}) {
+    const IMG_URL = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png`
     return (
         <Carddiv>
             <VignetteImage height="160px" width="160px" src={IMG_URL}>
             </VignetteImage>
             <DescriptionCard>
-    <Pokemon>{pokemon.name}</Pokemon>
-    <Price>{pokemon.price}€</Price>
-    <Stock><strong>{pokemon.stock}</strong> en stock !</Stock>
+    <Pokemon>{name}</Pokemon>
+    <Price>{price}€</Price>
+    <Stock><strong>{stock}</strong> en stock !</Stock>
             </DescriptionCard>
             <BuyButton>
                 Acheter
