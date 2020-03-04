@@ -5,16 +5,13 @@ function Card({pokemon}) {
     const IMG_URL = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png`
     return (
         <Carddiv>
-            <VignetteImage height="160px" width="160px" src={IMG_URL}>
-            </VignetteImage>
+            <VignetteImage height="160px" width="160px" src={IMG_URL}/>
             <DescriptionCard>
-    <Pokemon>{name}</Pokemon>
-    <Price>{price}€</Price>
-    <Stock><strong>{stock}</strong> en stock !</Stock>
+                <Pokemon>{name}</Pokemon>
+                <Price>{price}€</Price>
+                {(stock < 5) ? <StockRed><strong>{stock}</strong> en stock !</StockRed> : <StockGreen>Disponible</StockGreen>}
             </DescriptionCard>
-            <BuyButton>
-                Acheter
-            </BuyButton>
+            <BuyButton>Acheter</BuyButton>
         </Carddiv>
     )
 }
@@ -47,8 +44,14 @@ const Price = styled.h2`
     letter-spacing: 0.03em;
 `
 
-const Stock = styled.p`
+const StockRed = styled.p`
     color: red;
+    font-size: 14px;
+    margin-top: 4px;
+`
+
+const StockGreen = styled.p`
+    color: #007717;
     font-size: 14px;
     margin-top: 4px;
 `
