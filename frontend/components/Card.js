@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-function Card({name, price, id, stock}) {
+function Card({pokemon}) {
+    const {name, price, id, stock} = pokemon;
     const IMG_URL = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png`
     return (
         <Carddiv>
