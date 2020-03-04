@@ -2,6 +2,12 @@ import { useEffect } from 'react'
 import styled from 'styled-components'
 
 const Showcase = () => {
+
+    useEffect(() => {
+        console.log('test');
+
+    }, [])
+
     return (
             <div>
                 <ShowcaseImageDesktop src="../static/showcase-pikachu.jpg" alt="Showcase-Pikachu"/>
