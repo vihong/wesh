@@ -7,8 +7,8 @@ function LabelBar() {
             <Filters>
                 <h1>search bar</h1>
                 <h1>trier</h1>
-                <h1>types</h1>
-                <h1>price</h1>
+                <h1>prix</h1>
+                <h1>view (par 10, 50, 100)</h1>
             </Filters>
         </LabelBarDiv>
     )
