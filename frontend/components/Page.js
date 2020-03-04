@@ -1,8 +1,20 @@
+import Router from 'next/router';
+import NProgress from 'nprogress';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import Meta from './Meta';
 import Showcase from './Showcase';
 import Footer from './Footer';
+
+Router.onRouteChangeStart = () => {
+	NProgress.start();
+};
+Router.onRouteChangeComplete = () => {
+	NProgress.done();
+};
+Router.onRouteChangeError = () => {
+	NProgress.error();
+};
 
 function Page(props) {
 	return (
@@ -11,9 +23,9 @@ function Page(props) {
 				<GlobalStylePourTouteLaPage />
 				<Meta />
 				<Header />
-				<Showcase/>
+				<Showcase />
 				<MainStyled>{props.children}</MainStyled>
-				<Footer/>
+				<Footer />
 			</PageStyled>
 		</ThemeProvider>
 	);
