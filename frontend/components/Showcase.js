@@ -3,16 +3,16 @@ import styled from 'styled-components'
 
 const Showcase = () => {
 
-    const [ImgSrc, setImgSrc] = useState("../static/showcase-pikachu.jpg")
+    const [ImgSrc, setImgSrc] = useState('')
 
     const handleResize = event => {
-        if(event.target.innerWidth <= 1024) setImgSrc("../static/showcase-pikachu-mobile.jpg");
+        if(event.currentTarget.innerWidth <= 1024) setImgSrc("../static/showcase-pikachu-mobile.jpg");
         else setImgSrc("../static/showcase-pikachu.jpg")
     }
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);
-
+        window.addEventListener('load', handleResize);
     }, [])
 
     return (
