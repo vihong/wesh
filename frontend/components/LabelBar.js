@@ -25,9 +25,12 @@ const LabelBarDiv = styled.div`
         color: #000;
         font-weight: 400;
     };
-    margin-top: calc(-7px + 32px);
+    margin-top: 32px;
     border-bottom: 2px solid #EBEBEB;
     padding-bottom: 18px;
+    @media (max-width: 1204px) {
+        margin: 12px 24px 0;
+    }
 `
 
 const Filters = styled.div`
