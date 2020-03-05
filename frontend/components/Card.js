@@ -3,6 +3,10 @@ import styled from 'styled-components';
 function Card({pokemon}) {
     const {name, price, id, stock} = pokemon;
     const IMG_URL = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png`
+
+    const handleClick = () => {
+        alert('Added to the cart');
+    }
     return (
         <Carddiv>
             <VignetteImage height="160px" width="160px" src={IMG_URL}/>
@@ -11,7 +15,7 @@ function Card({pokemon}) {
                 <Price>{price}€</Price>
                 {(stock < 5) ? <StockRed><strong>{stock}</strong> en stock !</StockRed> : <StockGreen>Disponible</StockGreen>}
             </DescriptionCard>
-            <BuyButton>Acheter</BuyButton>
+            <BuyButton onClick={() => handleClick()}>Acheter</BuyButton>
         </Carddiv>
     )
 }
