@@ -9,7 +9,7 @@ function LabelBar() {
                 <SearchBar/>
                 <h1>trier</h1>
                 <h1>prix</h1>
-                <h1>view (par 10, 50, 100)</h1>
+                <h1>afficher</h1>
             </Filters>
         </LabelBarDiv>
     )
@@ -29,8 +29,14 @@ const LabelBarDiv = styled.div`
     margin-top: 32px;
     border-bottom: 2px solid #EBEBEB;
     padding-bottom: 18px;
+    
     @media (max-width: 1204px) {
+        margin: 32px 24px 0;
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
         margin: 12px 24px 0;
+        align-items: flex-start;
     }
 `
 
@@ -38,7 +44,7 @@ const Filters = styled.div`
     display: flex;
     flex-direction: row;
     *{
-        margin: 0 50px;
+        margin: 0 24px;
         display: flex;
         flex-direction: column;
         border:1px solid;
