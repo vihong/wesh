@@ -7,9 +7,14 @@ function LabelBar() {
             <h1>Tous les pokémons</h1>
             <Filters>
                 <SearchBar/>
+                {
+                /*
+                // COMMENTED TO STYLE THE SEARCH BAR EASILY
                 <h1>trier</h1>
                 <h1>prix</h1>
                 <h1>afficher</h1>
+                */
+                }
             </Filters>
         </LabelBarDiv>
     )
@@ -47,7 +52,6 @@ const Filters = styled.div`
         margin: 0 24px;
         display: flex;
         flex-direction: column;
-        border:1px solid;
     }
 
     /* TO DELETE */
