@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import SearchBar from './styles/SearchBar';
 
 function LabelBar() {
     return (
         <LabelBarDiv>
             <h1>Tous les pokémons</h1>
             <Filters>
-                <h1>search bar</h1>
+                <SearchBar/>
                 <h1>trier</h1>
                 <h1>prix</h1>
                 <h1>view (par 10, 50, 100)</h1>
@@ -42,15 +43,10 @@ const Filters = styled.div`
         flex-direction: column;
         border:1px solid;
     }
-    *:after {
-        content: 'transform it to input';
-        font-size: 12px;
-        color: grey
-    }
 
     /* TO DELETE */
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         * {
             margin: 0;
         }
