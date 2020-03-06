@@ -27,8 +27,8 @@ const SearchBarInput = styled.input`
     border: none;
     outline: none;
     font-size: 14px;
-    border-radius: 0 18px 18px 0;
-    margin-left: 12px;
+    border-radius: 0 4px 4px 0;
+    margin: 0 1px 0 12px;
 `
 
 

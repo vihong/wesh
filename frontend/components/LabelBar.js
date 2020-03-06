@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import SearchBarFilter from './SearchBarFilter';
+import SortByFilter from './SortByFilter';
 import PriceFilter from './PriceFilter';
 
 function LabelBar() {
@@ -8,11 +9,10 @@ function LabelBar() {
             <h1>Tous les pokémons</h1>
             <Filters>
                 <SearchBarFilter/>
-                <PriceFilter/>
+                <SortByFilter/>
                 {
                 /*
-                <h1>trier</h1>
-                <h1>prix</h1>
+                <PriceFilter/>
                 <h1>afficher</h1>
                 */
                 }
