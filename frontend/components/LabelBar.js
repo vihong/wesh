@@ -1,15 +1,16 @@
 import styled from 'styled-components';
-import SearchBar from './styles/SearchBar';
+import SearchBarFilter from './SearchBarFilter';
+import PriceFilter from './PriceFilter';
 
 function LabelBar() {
     return (
         <LabelBarDiv>
             <h1>Tous les pokémons</h1>
             <Filters>
-                <SearchBar/>
+                <SearchBarFilter/>
+                <PriceFilter/>
                 {
                 /*
-                // COMMENTED TO STYLE THE SEARCH BAR EASILY
                 <h1>trier</h1>
                 <h1>prix</h1>
                 <h1>afficher</h1>
