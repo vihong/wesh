@@ -11,12 +11,10 @@ function SearchBar() {
 }
 
 const SearchBarDiv = styled.div`
-    position: relative;
-    border: 1px solid #E0E0E0 !important;
+    border: 1px solid #E0E0E0;
     border-radius: 18px;
     padding: 8px 0 8px 12px;
-    width: calc(154px - 12px);
-    background-color: white;
+    background-color: white;    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,17 +26,9 @@ const SearchBarDiv = styled.div`
 const SearchBarInput = styled.input`
     border: none;
     outline: none;
-    width: 100%;
-    border-radius: 0 18px 18px 0;
     font-size: 14px;
-    height: 100%;
+    border-radius: 0 18px 18px 0;
     margin-left: 12px;
-`
-
-const SearchBarInpute = styled.input`
-    position: absolute;
-    top: 0;
-    outline: none;
 `
 
 

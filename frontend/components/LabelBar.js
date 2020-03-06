@@ -49,19 +49,6 @@ const LabelBarDiv = styled.div`
 const Filters = styled.div`
     display: flex;
     flex-direction: row;
-    *{
-        margin: 0 24px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* TO DELETE */
-
-    @media (max-width: 1024px) {
-        * {
-            margin: 0;
-        }
-    }
 `
 
 export default LabelBar;
