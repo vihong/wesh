@@ -38,7 +38,7 @@ const LabelBarDiv = styled.div`
   }
   @media (max-width: 768px) {
     flex-direction: column;
-    margin: 12px 24px 0;
+    margin: 12px 16px 0;
     align-items: flex-start;
   }
 `;
@@ -46,6 +46,13 @@ const LabelBarDiv = styled.div`
 const Filters = styled.div`
   display: flex;
   flex-direction: row;
+  margin-left: 24px;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    margin: 8px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export default LabelBar;
