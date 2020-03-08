@@ -1,81 +1,87 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-function Card({pokemon}) {
-    const {name, price, id, stock} = pokemon;
-    const IMG_URL = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png`
+function Card({ pokemon }) {
+  const { name, price, id, stock } = pokemon;
+  const IMG_URL = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png`;
 
-    const handleClick = () => {
-        alert('Added to the cart');
-    }
-    return (
-        <Carddiv>
-            <VignetteImage height="160px" width="160px" src={IMG_URL}/>
-            <DescriptionCard>
-                <Pokemon>{name}</Pokemon>
-                <Price>{price}€</Price>
-                {(stock < 5) ? <StockRed><strong>{stock}</strong> en stock !</StockRed> : <StockGreen>Disponible</StockGreen>}
-            </DescriptionCard>
-            <BuyButton onClick={() => handleClick()}>Acheter</BuyButton>
-        </Carddiv>
-    )
+  const handleClick = () => {
+    alert("Added to the cart");
+  };
+  return (
+    <Carddiv>
+      <VignetteImage height="160px" width="160px" src={IMG_URL} />
+      <DescriptionCard>
+        <Pokemon>{name}</Pokemon>
+        <Price>{price}€</Price>
+        {stock < 5 ? (
+          <StockRed>
+            <strong>{stock}</strong> en stock !
+          </StockRed>
+        ) : (
+          <StockGreen>Disponible</StockGreen>
+        )}
+      </DescriptionCard>
+      <BuyButton onClick={() => handleClick()}>Acheter</BuyButton>
+    </Carddiv>
+  );
 }
 
 const Carddiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    max-width: 192px;
-`
+  display: flex;
+  flex-direction: column;
+  max-width: 192px;
+`;
 
 const VignetteImage = styled.img`
-    padding: 12px 16px 32px 16px;
-    background-color: #DEDEDE;
-    border-radius: 4px;
-`
+  padding: 12px 16px 32px 16px;
+  background-color: #dedede;
+  border-radius: 4px;
+`;
 
-const DescriptionCard = styled.div`
-`
+const DescriptionCard = styled.div``;
 
 const Pokemon = styled.h1`
-    font-size: 22px;
-    font-weight: 400;
-    margin-top: 6px;
-`
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 6px;
+`;
 
 const Price = styled.h2`
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 2px;
-    letter-spacing: 0.03em;
-`
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 2px;
+  letter-spacing: 0.03em;
+`;
 
 const StockRed = styled.p`
-    color: red;
-    font-size: 14px;
-    margin-top: 4px;
-`
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+`;
 
 const StockGreen = styled.p`
-    color: #007717;
-    font-size: 14px;
-    margin-top: 4px;
-`
+  color: #007717;
+  font-size: 14px;
+  margin-top: 4px;
+`;
 
 const BuyButton = styled.button`
-    text-transform: uppercase;
-    display: block;
-    padding: 8px 59px;
-    margin-top: 10px;
-    background-color: #375FCC;
-    border-radius: 6px;
-    color: #FFF;
-    font-family: Poppins, Helvetica Neue;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    cursor: pointer;
-    &:hover {
-        background-color: #2552ce;
-    }
-`
+  text-transform: uppercase;
+  display: block;
+  padding: 8px 59px;
+  margin-top: 10px;
+  background-color: #375fcc;
+  border-radius: 6px;
+  color: #fff;
+  font-family: Poppins, Helvetica Neue;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    background-color: #2552ce;
+  }
+`;
 
 export default Card;
