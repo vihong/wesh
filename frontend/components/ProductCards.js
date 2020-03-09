@@ -69,6 +69,8 @@ function ProductCards() {
     }
   ];
 
+  console.log(pokemons);
+
   return (
     <ProductCardsDiv>
       {pokemons.map(pokemon => {
