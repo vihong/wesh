@@ -34,12 +34,21 @@ const LabelBarDiv = styled.div`
   padding-bottom: 18px;
 
   @media (max-width: 1204px) {
-    margin: 32px 24px 0;
+    margin: 0;
+    margin-top: 32px;
+
+    h1 {
+      margin-left: 24px;
+    }
   }
   @media (max-width: 768px) {
     flex-direction: column;
     margin: 12px 16px 0;
     align-items: flex-start;
+
+    h1 {
+      margin-left: 8px;
+    }
   }
 `;
 

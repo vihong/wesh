@@ -81,7 +81,7 @@ function ProductCards() {
 }
 
 const ProductCardsDiv = styled.div`
-  max-width: 1004px;
+  max-width: 1204px;
   margin: 0 auto;
   padding-top: 24px;
   display: grid;
