@@ -11,7 +11,19 @@ const pokemons = [
   {
     id: "002",
     name: "Herbizarre",
-    price: "3,90",
+    price: "49,90",
+    stock: 5
+  },
+  {
+    id: "002",
+    name: "Herbizarre",
+    price: "50,00",
+    stock: 5
+  },
+  {
+    id: "002",
+    name: "Herbizarre",
+    price: "50",
     stock: 5
   },
   {
