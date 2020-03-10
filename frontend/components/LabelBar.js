@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import SearchBarFilter from "./SearchBarFilter";
+import DropdownFilter from "./DropdownFilter";
 import SortByFilter from "./SortByFilter";
 import PriceFilter from "./PriceFilter";
-import DropdownFilter from "./DropdownFilter";
 
 function LabelBar() {
   return (
@@ -10,8 +10,8 @@ function LabelBar() {
       <h1>Tous les pokémons</h1>
       <Filters>
         <SearchBarFilter />
-        <DropdownFilter>Trier</DropdownFilter>
-        <DropdownFilter>Prix</DropdownFilter>
+        <SortByFilter />
+        <PriceFilter />
         <DropdownFilter>Afficher</DropdownFilter>
       </Filters>
     </LabelBarDiv>
@@ -45,6 +45,7 @@ const LabelBarDiv = styled.div`
     flex-direction: column;
     margin: 12px 16px 0;
     align-items: flex-start;
+    border-bottom: none;
 
     h1 {
       margin-left: 8px;
@@ -57,6 +58,7 @@ const Filters = styled.div`
   flex-direction: row;
   margin-left: 24px;
   flex-wrap: wrap;
+  align-items: center;
   @media (max-width: 768px) {
     margin: 8px 0 0 0;
     display: grid;
