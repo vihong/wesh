@@ -32,6 +32,7 @@ const DropdownFilterButton = styled.button`
     display: flex;
     align-items: center;
     padding: 8px 10px 8px 12px;
+    margin-left: 12px;
   }
   &:hover {
     background-color: #e0e0e0;
